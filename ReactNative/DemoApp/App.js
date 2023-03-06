@@ -1,12 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import LoginScreen from './screens/LoginScreen';
 // view is equivalent to div section 
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-    <View style={styles.container}>
+      <Stack.Navigator>
+      <Stack.Screen name = "Login" component={LoginScreen}/>
+    {/*<View style={styles.container}>
       <Text>"Hello instead " 
       </Text>
       <View>
@@ -14,7 +19,8 @@ export default function App() {
       </View>
       <Button title="Tap me"/>
       <StatusBar style="auto" />
-    </View>
+  </View>*/}
+    </Stack.Navigator>
     </NavigationContainer>
   );
 }
