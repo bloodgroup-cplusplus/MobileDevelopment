@@ -6,6 +6,12 @@ import LoginScreen from './screens/LoginScreen';
 // view is equivalent to div section 
 const Stack = createNativeStackNavigator();
 
+const globalScreenOptions={
+  headerStyle:{backgroundColor:"#2C6BED"},
+  headerTitleStyle:{color:"white"},
+  headerTintColor:"white",
+}
+
 export default function App() {
   return (
     <NavigationContainer>
