@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
   return (
+    <NavigationContainer>
     <View style={styles.container}>
       <Text>"Hello instead " 
       </Text>
@@ -14,6 +15,7 @@ export default function App() {
       <Button title="Tap me"/>
       <StatusBar style="auto" />
     </View>
+    </NavigationContainer>
   );
 }
 
