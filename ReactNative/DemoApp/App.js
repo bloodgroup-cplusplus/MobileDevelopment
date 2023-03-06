@@ -8,9 +8,9 @@ export default function App() {
       <Text>"Hello instead " 
       </Text>
       <View>
-      <Text>Another piece of text</Text>
+      <Text style={{margin:16,borderWidth: 2, borderColor:"red",padding:16 }}>Another piece of text</Text>
       </View>
-      <Button title="Tap me daddy"/>
+      <Button title="Tap me"/>
       <StatusBar style="auto" />
     </View>
   );
